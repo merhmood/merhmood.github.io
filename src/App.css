@@ -146,7 +146,7 @@ footer {
     bottom: 10px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 501px) {
     .App header {
         display: flex;
         justify-content: space-between;
@@ -237,6 +237,9 @@ footer {
     }
     .App> :nth-child(2) .message {
         margin-top: 4.5em;
+    }
+    .App> :nth-child(3) .skills ul{
+        padding-left: 1em;
     }
     .App > :nth-child(4) .cards .card{
         margin-bottom: 2em;

@@ -86,7 +86,7 @@ function App() {
       </section>
       <section>
         <h2>About</h2>
-        <p>From educating and inspiring talented and hardworking young people on their track towards this career. Philosophically, I believe there are two roles to being a software engineer. First, the facilitator. Someone who helps everyone doing their best work together by creating a psychologically safe and involving environment to collaborate. Then, the developer. Someone who translates the team best working into a desirable, realistic, and measurable product. . I value honest conversations and progressive thinking, and I aim to create things that empower and inspire.</p>
+        <p>From gaining knowledge from multiple sources. Philosophically, I believe there are two roles to being a software engineer. First, the facilitator. Someone who helps everyone doing their best work together by creating a psychologically safe and involving environment to collaborate. Then, the developer. Someone who translates the team best working into a desirable, realistic, and measurable product. . I value honest conversations and progressive thinking, and I aim to create things that empower and inspire.</p>
         <ul>
           <li>Communication.</li>
           <li>Critical thinking</li>
