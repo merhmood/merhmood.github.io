@@ -103,23 +103,53 @@ h6 {
     display: flex;
     justify-content: space-around;
     margin-top: 4em;
-    padding: 3em;
+    padding: 2em;
     border-radius: 5px;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 }
-
-.App > :nth-child(3) > :first-child{
-    border-right: 2px solid white;
+.App    > :nth-child(3) .skills h2{
+    text-align: center;
 }
-
-
-.App > :nth-child(3)  ul li{
-    margin-right: 1em;
+.App    > :nth-child(3) .skills p {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-weight: 700;
+}
+.App    > :nth-child(3) ul li {
+    margin-right: 1.5em;
     display: inline;
     list-style: none;
 }
-.App> :nth-child(3) .tools {
-    margin-left: 2.5em;
-
+.App    > :nth-child(3) .skills ul li img {
+   width: 1em;
+   object-fit: cover;
+}
+.App    > :nth-child(4){
+    margin-top: 4.5em;
+}
+.App > :nth-child(4) h2{
+    margin: 1em 0;
+    text-align: center;
+} 
+.App > :nth-child(4) .cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: 400;
+}
+.App> :nth-child(4) .cards .card{
+    width: 23%;
+    border: 1px solid black;
+    padding-bottom: 1em;
+}
+.App> :nth-child(4) .cards img{
+    width: 100%;
+}
+.App> :nth-child(4) .cards p, h6 {
+    font-size: 0.8rem;
+    padding: 0.5em;
+}
+.App> :nth-child(4) .cards .skills img{
+    width: 1.2em;
 }
 
