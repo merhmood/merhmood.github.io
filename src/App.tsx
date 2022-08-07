@@ -41,19 +41,33 @@ function App() {
             Welcome to my portfolio website
           </h1>
           <p>-Hi i am mahmud suberu, a MERN stack developer and this is my porfolio website, i hope you have a great time getting to know me</p>
+          <button>commencer <span>&#8595;</span></button>
         </div>
       </section>
       <section>
         <div className='skills'>
+          <h2>Skills</h2>
           <ul>
+            <li>TDD (Test Driven Developmet)</li>
+            <li>Software Design patterns</li>
+            <li>Software Architecture</li>
             <li>React</li>
             <li>Express js</li>
             <li>Node js</li>
-            <li></li>
-            <li></li>
+            <li>Mongo DB</li>
+            <li>Typescript</li>
+            <li>Nest js</li>
           </ul>
         </div>
-        <div className='tools'></div>
+        <div className='tools'>
+          <h2>Tools</h2>
+          <ul>
+            <li>Docker</li>
+            <li>Github actions</li>
+            <li>Git</li>
+            <li>Postman</li>
+          </ul>
+        </div>
       </section>
     </div>
   );
