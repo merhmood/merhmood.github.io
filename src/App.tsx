@@ -73,10 +73,10 @@ function App() {
         <h2>Projects</h2>
         <div className="cards">
             {projects.map((project)=>{
-              const {id, img,title, text} = project
+              const {id, img,title, text, link} = project
               return(
               <div className="card" key={id}>
-                <img src={img} alt="" />
+                <a href={link} target="_blank" rel="noreferrer"><img src={img} alt="" /></a>
                 <h6>{title}</h6>
                 <p>{text}</p>
               </div>

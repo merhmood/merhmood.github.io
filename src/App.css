@@ -44,8 +44,11 @@ h6 {
     justify-content: space-around;
     margin: 1em;
 }
+.App> :nth-child(2) .message{
+    padding-left: 1em;
+}
 .App > :nth-child(2) .user-media .social-media span{
-    margin: 0 5px;
+    margin: 5px;
 }
 .App > :nth-child(2) .user-media .social-media span a img{
     width: 25px;
@@ -220,17 +223,19 @@ footer {
     .App> :nth-child(2){
         margin-top: 3.5em;
     }
-    .App> :nth-child(2) .user-media .social-media{
-        position: relative;
-        left: 9em;
-        bottom: 1.5em;
+    .App> :nth-child(2) .user-media{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .App> :nth-child(2) .user-media .social-media {
+        margin-top: 1em;
+        width: fit-content;
     }
     .App > :nth-child(2) .user-media .user-image img {
         max-width: 150px;
         height: 300px;
     }
     .App> :nth-child(2) .message {
-        padding-left: 2em;
         margin-top: 4.5em;
     }
     .App > :nth-child(4) .cards .card{
