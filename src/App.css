@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p, 
+span,
+li, 
+button {
+    font-family: 'Raleway', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cinzel Decorative', cursive;
+}
+.App{
+    padding: 0 4em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+
+}
+.App header ul {
+    display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.App header ul > li {
+    margin: 0 1em;
+    list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App header ul > li:hover{
+    cursor: pointer;
+    color: #77f28f
 }
+.App > :nth-child(2){
+    display: flex;
+    justify-content: space-around;
+}
+.App section .user-media{
+    display: flex;
+}
+.App  section .user-media .social-media{
+    transform: rotate(270deg);
+    margin-top: 10em;
+    margin-left: -5em;
+    height: 20px;
+}
+.App  section .user-media .social-media span{
+    margin: 0 3px;
+}
+.App  section .user-media .social-media span a img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.App  section .user-media .user-image{
+    border: 2px solid black;
+    width: fit-content;
+    border-radius: 105px;
+    padding: 0.55em 0.55em 0.3em 0.55em;
+}
+
+.App  section .user-media .user-image img{
+    max-width: 200px;
+    height: 400px;
+    border-radius: 105px;
+    object-fit: cover;
+}
+.App  section .message {
+   margin-top: 10em;
+}
+
+
