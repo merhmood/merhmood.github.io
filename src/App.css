@@ -112,13 +112,14 @@ h6 {
     border-right: 2px solid white;
 }
 
-.App> :nth-child(3) .tools {
-    margin-left: 3em;
-}
 
 .App > :nth-child(3)  ul li{
     margin-right: 1em;
     display: inline;
     list-style: none;
+}
+.App> :nth-child(3) .tools {
+    margin-left: 2.5em;
+
 }
 

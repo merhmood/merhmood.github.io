@@ -40,7 +40,7 @@ function App() {
           <h1>
             Welcome to my portfolio website
           </h1>
-          <p>-Hi i am mahmud suberu, a MERN stack developer and this is my porfolio website, i hope you have a great time getting to know me</p>
+          <p>-Hi i am mahmud suberu, a MERN stack developer and this is my porfolio website. I hope you have a great time getting to know me</p>
           <button>commencer <span>&#8595;</span></button>
         </div>
       </section>
@@ -69,6 +69,7 @@ function App() {
           </ul>
         </div>
       </section>
+      <section></section>
     </div>
   );
 }
