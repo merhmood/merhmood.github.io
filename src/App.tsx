@@ -99,7 +99,7 @@ function App() {
         <a href="https://drive.google.com/file/d/1QzOxGErx9qr6hew-_8cxv1rICV0ItCkq/view?usp=sharing" target="_blank" rel="noreferrer">For formal accessibilty, you can get my resume by clicking on this link</a>
       </section>
       <footer>
-        &copy; of merhmood 2022
+        <p>&copy; of merhmood 2022</p>
       </footer>
       <button className="arrow-up">&#8593;</button>
     </div>
