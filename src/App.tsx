@@ -86,7 +86,7 @@ function App() {
       </section>
       <section>
         <h2>About</h2>
-        <p>From gaining knowledge from multiple sources. Philosophically, I believe there are two roles to being a software engineer. First, the facilitator. Someone who helps everyone doing their best work together by creating a psychologically safe and involving environment to collaborate. Then, the developer. Someone who translates the team best working into a desirable, realistic, and measurable product. . I value honest conversations and progressive thinking, and I aim to create things that empower and inspire.</p>
+        <p>After gaining knowledge from multiple sources, I philosophically believe there are two roles to being a software engineer. First, the facilitator is someone who helps everyone do their best work together by creating a psychologically safe and involving environment to collaborate on, then the developer is someone who translates the team's best work into a desirable, realistic, and measurable product. I value honest conversations and progressive thinking, and I aim to create things that empower and inspire.</p>
         <ul>
           <li>Communication.</li>
           <li>Critical thinking</li>
@@ -96,7 +96,7 @@ function App() {
       </section>
       <section>
         <h2>Resume</h2>
-        <a href="https://drive.google.com/file/d/1QzOxGErx9qr6hew-_8cxv1rICV0ItCkq/view?usp=sharing" target="_blank" rel="noreferrer">For formal accessibilty, you can get my resume by clicking on this link</a>
+        <a href="https://drive.google.com/file/d/1SMmGxxyOTHD06_coPYic0zSyrBqIJVsp/view?usp=sharing" target="_blank" rel="noreferrer">For formal accessibilty, you can get my resume by clicking on this link</a>
       </section>
       <footer>
         <p>&copy; of merhmood 2022</p>

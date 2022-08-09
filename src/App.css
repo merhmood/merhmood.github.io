@@ -45,8 +45,11 @@ h6 {
     justify-content: space-around;
     margin: 1em;
 }
-.App> :nth-child(2) .message{
+.App > :nth-child(2) .message{
     padding-left: 1em;
+}
+.App > :nth-child(2) .user-media .social-media{
+    animation: media-icon 1.5s ease-in-out;
 }
 .App > :nth-child(2) .user-media .social-media span{
     margin: 5px;
@@ -61,11 +64,21 @@ h6 {
     width: fit-content;
     border-radius: 105px;
     padding: 0.55em 0.55em 0.3em 0.55em;
+    animation: userimage 3s;
+    position: relative;
 }
 
 .App  > :nth-child(2) .user-media .user-image img{
     border-radius: 105px;
     object-fit: cover;
+}
+@keyframes userimage {
+    from{
+        opacity: 0;
+    };
+    to{
+        opacity: 1;
+    }
 }
 .App  > :nth-child(2) .message {
    margin-top: 10em;
@@ -164,6 +177,15 @@ footer {
         margin-left: -5em;
         height: 20px;
     }
+        @keyframes media-icon {
+            from {
+                transform: rotate(0deg);
+            }
+    
+            to {
+                transform: rotate(270deg);
+            }
+        }
     .App > :nth-child(2) .user-media {
         display: flex;
     }
@@ -227,6 +249,28 @@ footer {
     .App> :nth-child(2) .user-media{
         display: flex;
         flex-direction: column-reverse;
+    }
+    @keyframes media-icon {
+        0% {
+            position: relative;
+            left: -10em;
+        }
+        25%{
+            position: relative;
+            left: 5em;
+        }
+        50%{
+            position: relative;
+            left: -2em;
+        }
+        75%{
+            position: relative;
+            left: 2em;
+        }
+        100% {
+            position: relative;
+            left: 0em;
+        }
     }
     .App> :nth-child(2) .user-media .social-media {
         margin-top: 1em;
