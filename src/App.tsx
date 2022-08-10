@@ -75,11 +75,13 @@ function App() {
             {projects.map((project)=>{
               const {id, img,title, text, link} = project
               return(
-              <div className="card" key={id}>
-                <a href={link} target="_blank" rel="noreferrer"><img src={img} alt="" /></a>
-                <h6>{title}</h6>
-                <p>{text}</p>
-              </div>
+              <a href={link} target="_blank" rel="noreferrer">
+                <div className="card" key={id}>
+                  <img src={img} alt="" />
+                  <h6>{title}</h6>
+                  <p>{text}</p>
+                </div>
+              </a>
             )
             })}
         </div>
@@ -87,11 +89,13 @@ function App() {
       <section>
         <h2>About</h2>
         <p>After gaining knowledge from multiple sources, I philosophically believe there are two roles to being a software engineer. First, the facilitator is someone who helps everyone do their best work together by creating a psychologically safe and involving environment to collaborate on, then the developer is someone who translates the team's best work into a desirable, realistic, and measurable product. I value honest conversations and progressive thinking, and I aim to create things that empower and inspire.</p>
+        <br /><p>My soft skills include:</p>
         <ul>
-          <li>Communication.</li>
+          <li>Agility</li>
           <li>Critical thinking</li>
           <li>Adaptability</li>
           <li>Team work</li>
+          <li>Time management</li>
         </ul>
       </section>
       <section>
