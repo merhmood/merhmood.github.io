@@ -22,6 +22,9 @@ function Links() {
         }
         setScrollPosition(tempScrollPosition as ScrollPosition)
     }, [])
+    function scrollPage(link: string, scrollPosition: ScrollPosition) {
+        window.scrollTo(0, scrollPosition[link])
+    }
   return (
     <ul>
         <li onClick={() => scrollPage("Skills", scrollPosition)}>Skills</li>
@@ -30,9 +33,6 @@ function Links() {
         <li onClick={() => scrollPage("Resume", scrollPosition)}>Resume</li>
     </ul>
   )
-}
-function scrollPage(link: string, scrollPosition: ScrollPosition) {
-    window.scrollTo(0, scrollPosition[link])
 }
 
 export default Links

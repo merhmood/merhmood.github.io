@@ -28,16 +28,19 @@ function App() {
 
   const [bodyPosition, setBodyPosition] = useState(0)
   useEffect(()=>{
-    let body = document.querySelector("body")
-    console.log(body)
-    body?.addEventListener("scroll", getBodyScrollPosition)
+    window.addEventListener("scroll", getBodyScrollPosition)
 
-    return body?.removeEventListener("scroll", getBodyScrollPosition)
+    return window.removeEventListener("scroll", getBodyScrollPosition)
   },[])
+
   function getBodyScrollPosition(){
-    console.log("body scrolled", bodyPosition)
-    setBodyPosition((state)=>state + 1)
+    setBodyPosition((state)=>{
+      console.log("scrolled")
+      return state + 1
+    })
   }
+
+  console.log(bodyPosition)
 
   return (
     <div className="App">
