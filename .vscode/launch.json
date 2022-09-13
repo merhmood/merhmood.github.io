@@ -13,10 +13,10 @@
             "webRoot": "${workspaceFolder}"
         },
         {
-            "type": "node",
+            "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/helloworld.ts",
+            "program": "${workspaceFolder}/*.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/out/**/*.js"
