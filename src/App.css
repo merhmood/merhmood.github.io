@@ -1,2 +1,70 @@
-
+div {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20% auto;
+    height: 100px;
+    text-align: center;
+}
+div a {
+    display: block;
+    margin-bottom: 30px;
+}
+div h2 span{
+    display: inline-block;
+    animation: wave 2s 1s;
+}
+@keyframes wave {
+    0%{
+        transform: rotate(-2deg);
+    }
+    10%{
+        transform: rotate(2deg);
+    }
+    20%{
+        transform: rotate(-2deg);
+    }
+    30%{
+        transform: rotate(2deg);
+    }
+    40% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    60% {
+        transform: rotate(-2deg);
+    }
+    70% {
+        transform: rotate(2deg);
+    }
+    80% {
+        transform: rotate(-2deg);
+    }
+    90% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+    }
+}
+button{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    width: 25%;
+    max-width: 55px;
+    border-style: none;
+    animation: buttonOpacityTransition 2s;
+}
+@keyframes buttonOpacityTransition {
+   0%{
+    opacity: 0;
+   }
+   100%{
+    opacity: 1;
+   } 
+}
+button img{
+    width: 100%;
+}
 
