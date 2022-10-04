@@ -16,7 +16,6 @@ function App() {
       <h2>
         HELLO <span>👋</span>, I AM MAHMUD, AN ARCHITECTURE DRIVEN SOFTWARE ENGINEER 
       </h2>
-      <a href="https://drive.google.com/file/d/1bTsR2RqRUsbmGAzqbw3biF_2EtoypElC/view?usp=sharing">For more info here's my resume</a>
       <button onClick={
         ()=>setTheme(
           (state)=>toggleTheme(state)
