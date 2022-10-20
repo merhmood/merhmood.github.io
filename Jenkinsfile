@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('git repo & clean'){
             steps{
-                bat 'rmdir -rf merhmood.github.io'
+                bat 'rmdir /s /q merhmood.github.io'
                 bat 'git clone https://github.com/merhmood/merhmood.github.io.git'
             }
         }
