@@ -10,16 +10,32 @@ exports[`testing the nav component width 1`] = `
 >
   <ul>
     <li>
-      Home
+      <a
+        href="#home"
+      >
+        Home
+      </a>
     </li>
     <li>
-      About
+      <a
+        href="#about"
+      >
+        About
+      </a>
     </li>
     <li>
-      Projects
+      <a
+        href="#personal-projects"
+      >
+        Personal Projects
+      </a>
     </li>
     <li>
-      Contact
+      <a
+        href="#contact"
+      >
+        Contact
+      </a>
     </li>
   </ul>
 </nav>

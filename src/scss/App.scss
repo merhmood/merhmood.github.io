@@ -47,7 +47,7 @@ body {
     }
     .home{
         background-color: white;
-        margin-top: 265px;
+        margin-top: 247px;
         padding: 20px;
         .my-self{
             img{
@@ -67,6 +67,16 @@ body {
             p{
                 font-size: 0.86rem;
                 line-height: 21px;
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .home{
+            .my-self{
+                span{
+                    display: block;
+                    margin-top: 1em;
+                }
             }
         }
     }
