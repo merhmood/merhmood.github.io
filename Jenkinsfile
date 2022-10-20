@@ -5,19 +5,19 @@ pipeline {
     stages {
         stage('git repo & clean'){
             steps{
-                bat 'rmdir -rf merhmood.github.io'
-                bat 'git clone https://github.com/merhmood/merhmood.github.io.git'
+                sh 'rmdir -rf merhmood.github.io'
+                sh 'git clone https://github.com/merhmood/merhmood.github.io.git'
             }
         }
         stage('install') {
             steps {
-                bat 'npm install'
-                bat 'npm audit fix'
+                sh 'npm install'
+                sh 'npm audit fix'
             }
         }
         stage('test & test coverage') {
             steps {
-                bat 'npm run coverage'
+                sh 'npm run coverage'
             }
         }
     }
