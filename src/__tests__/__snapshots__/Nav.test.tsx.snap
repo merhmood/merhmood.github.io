@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the nav component width 1`] = `
+<nav
+  style={
+    Object {
+      "left": 200,
+    }
+  }
+>
+  <ul>
+    <li>
+      Home
+    </li>
+    <li>
+      About
+    </li>
+    <li>
+      Projects
+    </li>
+    <li>
+      Contact
+    </li>
+  </ul>
+</nav>
+`;
