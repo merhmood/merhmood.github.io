@@ -8,13 +8,16 @@ body {
 .app{
     width: 90%;
     max-width: 700px;
+    font-size: 0.9rem;
     margin: 0 auto;
     nav{
         width: 200px;
         position: fixed;
-        font-size: 0.9rem;
         top: 1.5em;
+        border: 1px solid #dadada;
+        border-radius: 10px;
         background-color: white;
+        z-index: 3;
         ul{
             background-color: white;
             padding: 1em 2em;
@@ -24,7 +27,7 @@ body {
                 width: 130px;
                 padding: 0.4em;
                 box-shadow: 0 0 1px 2px rgba($color: #000000, $alpha: 0.1);
-                background-color: rgb(69, 167, 248);
+                background-color: rgb(156, 210, 253);
                 a{
                   color: black;
                   text-decoration: none;
@@ -32,41 +35,61 @@ body {
             }
         }
     }
-    //media queries for nav and its children
-    @media screen and (max-width: 500px) {
-        nav{
-            background-color: white;
-            justify-content: flex-start;
-        }
-    }
+    //media queries for nav and its children, 
+    //this is use by match media
     @media screen and (min-width: 783px) {
-        nav {
-            background-color: white;
-            justify-content: flex-start;
-        }
     }
     .home{
         background-color: white;
-        margin-top: 247px;
-        padding: 20px;
+        margin-top: 250px;
+        padding: 2em;
+        border: 1px solid #dadada;
+        border-radius: 10px;
         .my-self{
-            img{
-                height: 10rem;
-                width: 10rem;
-                box-shadow: 0 0 1px 2px rgba($color: #000000, $alpha: 0.5);
-                object-fit: cover;
-                border-radius: 100px;
+            .image-container{
+                height: 8rem;
+                width: 8rem;
+                display: inline-block;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: 0 0 3px 3px rgba($color: #000000, $alpha: 0.2);
+                    object-fit: cover;
+                    border-radius: 100px;
+                    animation: myselfimg 5s ease-in-out;
+                }
+            }
+            &:nth-child(2){
+                display: inline;
+            }
+            @keyframes myselfimg {
+                0%{
+                    opacity: 0;
+                    scale: 0;
+                    transform: rotate(0deg);
+                    // position: absolute;
+                    // left: -33rem;
+                }
+                100%{
+                    opacity: 1;
+                    scale: 1;
+                    transform: rotate(1800deg);
+                    // position: absolute;
+                    // left: 0;
+                }
             }
             span{
                 display: inline-block;
                 font-weight: bold;
                 margin-left: 0.5rem;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 width: 10px;
             }
             p{
                 font-size: 0.86rem;
-                line-height: 21px;
+                line-height: 18px;
+                letter-spacing: 0.5px;
             }
         }
     }
@@ -81,9 +104,38 @@ body {
         }
     }
     .about{
+        border: 1px solid #dadada;
+        border-radius: 10px;
        background-color: white;
        margin-top: 18px;
        padding: 20px; 
+    }
+    .personal-projects {
+        border: 1px solid #dadada;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 18px;
+        padding: 20px;
+    }
+    .contact {
+        border: 1px solid #dadada;
+        border-radius: 10px;
+        background-color: white;
+        margin: 18px 0;
+        padding: 20px;
+        div{
+            span{
+                display: inline-block;
+                margin-right: 0.5em;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 
 }

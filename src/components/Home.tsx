@@ -1,12 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Home = () => {
+
+  const [profilePic, setProfilePic] = useState('')
+
+  useEffect(()=>{
+    setProfilePic(
+      `${process.env.PUBLIC_URL}/assets/profile-img.jpg`
+    )
+  }, [])
+
   return (
-    <div className='home' id='home'>
+    <div className='home'>
       <div className='my-self'>
-        <img src={`${process.env.PUBLIC_URL}/assets/profile-img.jpg`} alt="" />
+        <div className='image-container'>
+          <img src={profilePic} alt='profile pic' />
+        </div>
         <span>Mahmud Suberu</span>
-        <p>I'm a software engineer with an amazing adaptability, communication and problem solving skills, I provide value by helping companies meet the demands of their customer, through continuous delivery of amazing products, I design sustainable software architecture that handle the continuous changes demanded by the users and stakeholder. I always keep myself updated with the latest problem solving techniques to ensure the product I develop don't fall short in technical requirements. </p>
+        <p>
+          I'm a software engineer from
+
+          <span style={
+            {
+              color: 'green', 
+              fontSize: '0.9rem', 
+              marginLeft: 5, 
+              marginRight: 43
+            }
+          }>
+            Nigeria
+          </span>
+          , current using the MERN Stack for day to day workflow.
+          I build software that scales without being impacted by
+          changes that cut across concerns. I have great feel for
+          Software design and Architect, clean code, Test Driven Development, 
+          DevOps and Agile Framework &#x1F601;	
+
+        </p>
       </div>
     </div>
   )

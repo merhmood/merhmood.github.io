@@ -11,7 +11,7 @@ export function navLeftSpacing() {
   const mediaQueries = window.matchMedia('(min-width: 783px)')
   if (mediaQueries.matches) {
     const navWidth = 180
-    const appWidth = 660
+    const appWidth = 640
     const navLeftSpacing = appWidth + ((window.innerWidth - appWidth) / 2) - navWidth
     return { left: navLeftSpacing }
   }
