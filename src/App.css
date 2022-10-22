@@ -84,6 +84,12 @@ body {
   line-height: 18px;
   letter-spacing: 0.5px;
 }
+.app .home .my-self p span {
+  color: green;
+  margin-left: 0;
+  font-size: 0.9rem;
+  display: inline;
+}
 @media screen and (max-width: 500px) {
   .app .home .my-self span {
     display: block;
