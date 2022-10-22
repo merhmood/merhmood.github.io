@@ -22,7 +22,7 @@ const Home = () => {
           , currently using the MERN Stack for my 
           day to day development workflow.
           I have great feel for Software Design, 
-          Software Architecture, clean code, 
+          Software Architecture, Clean Code, 
           Test Driven Development, DevOps and 
           Agile Framework &#x1F601;	
 
